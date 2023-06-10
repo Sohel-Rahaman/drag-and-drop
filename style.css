@@ -1,0 +1,87 @@
+/*---- CSS styles */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  padding: 5px;
+}
+
+.whitebox {
+  height: 550px;
+  width: 700px;
+  border: 1px solid #000;
+  display: inline-block;
+  margin: 25px;
+  padding: 10px;
+}
+
+.imgbox {
+  display: inline-block;
+  background-image: url("part-blurry-image.webp");
+  background-position: center;
+  background-size: cover;
+  height: 155px;
+  width: 155px;
+  cursor: move;
+  margin: 2px;
+}
+
+.imgbox img {
+  height: 155px;
+  width: 155px;
+  position: absolute;
+}
+
+.textbox {
+  display: inline-block;
+  background-color: lightblue;
+  padding: 10px;
+  cursor: move;
+}
+
+.textbox p {
+  margin: 0;
+}
+
+.hold {
+  border: 3px solid red;
+}
+
+.hide {
+  display: none;
+}
+
+.dashed {
+  background-color: rgb(155, 153, 155);
+  border: 3px dashed yellow;
+}
+
+.reset-button {
+  margin-top: 10px;
+  padding: 8px 15px;
+  border-radius: 7px;
+  margin-left: 150px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.reset-button:hover {
+  background-color: rgb(136, 133, 133);
+  color: white;
+}
+@media only screen and (max-width: 798px) {
+  .imgbox {
+    height: 125px;
+    width: 125px;
+  }
+}
+@media only screen and (max-width: 682px) {
+  .imgbox {
+    height: 95px;
+    width: 95px;
+  }
+}
